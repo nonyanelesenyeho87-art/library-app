@@ -1,4 +1,4 @@
-# Library Management System (BIWA2110 Web Application Development)
+
 
 React (Vite) frontend + Express REST API + MySQL.
 
@@ -14,8 +14,8 @@ library-app/
 ```bash
 cd backend
 npm install
-cp .env.example .env      # then put your MySQL password in .env
-npm run setup             # creates library_db, tables and demo data
+cp .env.example .env     
+npm run setup             
 npm start                 # http://localhost:5000
 ```
 
@@ -50,5 +50,3 @@ npm run dev               # http://localhost:5173
 
 Middleware: `express.json()`, `cors`, auth/admin guards, central error handler. Passwords hashed with scrypt; stock changes use a MySQL transaction with row locking (`SELECT … FOR UPDATE`).
 
-## Submission
-Push this folder to a GitHub repo (with `backend/` and `frontend/`) and submit the link.
